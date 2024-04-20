@@ -58,42 +58,42 @@
 
 #gallery .img1{
     grid-area: img1;
-    background-image: url("thumbnails/img1.jpg");
+    background-image: url("Assets/Images/thumbnails/img1.jpg");
 }
 
 #gallery .img2{
     grid-area: img2;
-    background-image: url("thumbnails/img2.jpg");
+    background-image: url("Assets/Images/thumbnails/img2.jpg");
 }
 
 #gallery .img3{
     grid-area: img3;
-    background-image: url("thumbnails/img3.jpg");
+    background-image: url("Assets/Images/thumbnails/img3.jpg");
 }
 
 #gallery .img4{
     grid-area: img4;
-    background-image: url("thumbnails/img4.jpg");
+    background-image: url("Assets/Images/thumbnails/img4.jpg");
 }
 
 #gallery .img5{
     grid-area: img5;
-    background-image: url("thumbnails/img5.jpg");
+    background-image: url("Assets/Images/thumbnails/img5.jpg");
 }
 
 #gallery .img6{
     grid-area: img6;
-    background-image: url("thumbnails/img6.jpg");
+    background-image: url("Assets/Images/thumbnails/img6.jpg");
 }
 
 #gallery .img7{
     grid-area: img7;
-    background-image: url("thumbnails/img7.png");
+    background-image: url("Assets/Images/thumbnails/img7.png");
 }
 
 #gallery .img8{
     grid-area: img8;
-    background-image: url("thumbnails/img8.jpg");
+    background-image: url("Assets/Images/thumbnails/img8.jpg");
 }
 
 .img-frame {
@@ -117,7 +117,7 @@
 }
 
 #gallery2 {
-    display: grid;
+    display: none;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-auto-rows: auto;
     grid-gap: 10px;
@@ -142,38 +142,38 @@
 
 #gallery2 .img9{
     grid-area: img9;
-    background-image: url("thumbnails/img9.jpg");
+    background-image: url("Assets/Images/thumbnails/img9.jpg");
 }
 
 #gallery2 .img10{
     grid-area: img10;
-    background-image: url("thumbnails/img10.jpg");
+    background-image: url("Assets/Images/thumbnails/img10.jpg");
 }
 
 #gallery2 .img11{
     grid-area: img11;
-    background-image: url("thumbnails/img11.jpg");
+    background-image: url("Assets/Images/thumbnails/img11.jpg");
 }
 
 #gallery2 .img12{
     grid-area: img12;
-    background-image: url("thumbnails/img12.jpg");
+    background-image: url("Assets/Images/thumbnails/img12.jpg");
 }
 
 #gallery2 .img13{
     grid-area: img13;
-    background-image: url("thumbnails/img13.jpg");
+    background-image: url("Assets/Images/thumbnails/img13.jpg");
 }
 
 #gallery2 .img14{
     grid-area: img14;
-    background-image: url("thumbnails/img14.jpg");
+    background-image: url("Assets/Images/thumbnails/img14.jpg");
 }
 
 #gallery2 .img15{
     grid-area: img15;
     height: 610px;
-    background-image: url("thumbnails/img15.jpg");
+    background-image: url("Assets/Images/thumbnails/img15.jpg");
 }
 
 
@@ -226,6 +226,85 @@
     display: none;
 }
 
+#radio2:checked ~#gallery2{
+    display: grid;
+}
+
+
 .month{
     color: gold;
+}
+
+.container{
+    max-width: 1170px;
+    margin:auto;
+}
+
+.rowf{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer{
+    margin-top: 50px;
+    background-color: black;
+    padding: 70px 0;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: forestgreen;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    color: gold;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: gold;
+    padding-left: 8px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: gold;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
 }
