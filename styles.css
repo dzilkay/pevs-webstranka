@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.gallery{
+    height: 100vh;
+    background-color: #232222;
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: 0;
+    margin: 0;
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+
+.wrapper-gallery{
+    margin: 0 20vw;
+}
+
+.slider {
+    margin-top: 5%;
+}
+
+.slider #headline {
+    color: forestgreen;
+    margin-left: 47%;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: gold;
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+    grid-template-areas:
+    "gallery-h2 gallery-h2 gallery-h2 gallery-h2"
+    "img1 img2 img3 img4"
+    "img5 img6 img7 img8";
+}
+
+#gallery .gallery-img{
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+#gallery h2{
+    grid-area: gallery-h2;
+}
+
+#gallery .img1{
+    grid-area: img1;
+    background-image: url("thumbnails/img1.jpg");
+}
+
+#gallery .img2{
+    grid-area: img2;
+    background-image: url("thumbnails/img2.jpg");
+}
+
+#gallery .img3{
+    grid-area: img3;
+    background-image: url("thumbnails/img3.jpg");
+}
+
+#gallery .img4{
+    grid-area: img4;
+    background-image: url("thumbnails/img4.jpg");
+}
+
+#gallery .img5{
+    grid-area: img5;
+    background-image: url("thumbnails/img5.jpg");
+}
+
+#gallery .img6{
+    grid-area: img6;
+    background-image: url("thumbnails/img6.jpg");
+}
+
+#gallery .img7{
+    grid-area: img7;
+    background-image: url("thumbnails/img7.png");
+}
+
+#gallery .img8{
+    grid-area: img8;
+    background-image: url("thumbnails/img8.jpg");
+}
+
+.img-frame {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: gold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.img-frame:hover{
+    opacity: 0.8;
+    transition: all ease-in-out 100ms;
+}
+
+#gallery2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+    grid-template-areas:
+    "gallery-h2 gallery-h2 gallery-h2 gallery-h2"
+    "img9 img10 img15 img11"
+    "img13 img14 img15 img12";
+}
+
+#gallery2 .gallery-img2{
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+#gallery2 h2{
+    grid-area: gallery-h2;
+}
+
+#gallery2 .img9{
+    grid-area: img9;
+    background-image: url("thumbnails/img9.jpg");
+}
+
+#gallery2 .img10{
+    grid-area: img10;
+    background-image: url("thumbnails/img10.jpg");
+}
+
+#gallery2 .img11{
+    grid-area: img11;
+    background-image: url("thumbnails/img11.jpg");
+}
+
+#gallery2 .img12{
+    grid-area: img12;
+    background-image: url("thumbnails/img12.jpg");
+}
+
+#gallery2 .img13{
+    grid-area: img13;
+    background-image: url("thumbnails/img13.jpg");
+}
+
+#gallery2 .img14{
+    grid-area: img14;
+    background-image: url("thumbnails/img14.jpg");
+}
+
+#gallery2 .img15{
+    grid-area: img15;
+    height: 610px;
+    background-image: url("thumbnails/img15.jpg");
+}
+
+
+.slider {
+    width: 100%;
+    height: 700px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 100%;
+    height: 630px;
+}
+
+.slides input{
+    display: none;
+}
+
+.navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: 30px;
+    margin-left: 28.5%;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid gold;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: gold;
+}
+
+#radio2:checked ~#gallery{
+    margin-left: 0;
+}
+
+#radio2:checked ~#gallery{
+    display: none;
+}
+
+.month{
+    color: gold;
+}
