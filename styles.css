@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .gallery{
     height: 100vh;
     background-color: #232222;
@@ -307,4 +308,106 @@ ul{
 .footer-col .social-links a:hover{
     color: #24262b;
     background-color: #ffffff;
+}
+
+.registration {
+    height: 100vh;
+    background-color: #232222;
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: 0;
+    margin: 0;
+    overflow-y: scroll;
+    overflow-x: auto;
+    font-family: arial, sans-serif;
+}
+
+#form {
+    width: 500px;
+    margin: 20vh auto 0 auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+#form h1 {
+    color: #0f2027;
+    text-align: center;
+}
+
+#form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: gold;
+    background-color: forestgreen;
+    border: none;
+    border-radius: 4px;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.input-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+    width: 95%;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
+.sex-option {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.sex-radio:not(:checked) {
+    border-color: #ff3860;
+}
+
+.sex-radio:checked {
+    border-color: #09c372;
+}
+
+#title {
+    width: 50px;
+}
+
+#submit {
+    font-weight: bold;
+}
+
+textarea {
+    resize: none;
+}
+
+#form h1{
+    color: forestgreen;
 }
