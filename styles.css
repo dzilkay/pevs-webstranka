@@ -4,6 +4,421 @@
     box-sizing: border-box;
 }
 
+.About{
+    height: 100vh;
+    background-color: #232222;
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: 0;
+    margin: 0;
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+
+.introductoryParagraph
+{
+    margin-left: 2vw;
+    text-align: left;
+    font-size: 40px;
+    font-style: italic;
+    margin-top: 25vh;
+    color: ghostwhite;
+}
+
+/*2560x1440*/
+:root {
+    --transformY-logo-offset: 50%;
+    --transformY-text-offset: 100%;
+
+    --transformX-logo-offset: 180%;
+    --transformX-text-offset: 20%;
+
+    --wrapper-carousel-offset-top: 12%;
+
+    --right-text-offset: 35%;
+}
+
+/*height*/
+
+
+@media only screen and (max-height: 1080px) {
+    :root {
+        --wrapper-carousel-offset-top: 12%;
+
+        --transformY-logo-offset: 35%;
+
+        --transformY-text-offset: 30%;
+    }
+}
+
+/*width*/
+@media only screen and (max-width: 1920px) and (min-width: 1651px) {
+    :root {
+        --transformX-logo-offset: 130%;
+
+
+        --transformX-text-offset: 20%;
+
+
+        --right-text-offset: 52%;
+    }
+}
+
+@media only screen and (max-width: 1650px) and (min-width: 1466px){
+    :root {
+        --transformX-logo-offset: 90%;
+    }
+}
+
+@media only screen and (max-width: 1465px) and (min-width: 1361px) {
+    :root {
+        --transformX-logo-offset: 60%;
+    }
+}
+
+@media only screen and (max-width: 1360px) and (min-width: 1261px){
+    :root {
+        --transformX-logo-offset: 30%;
+        .sachLevice_text3{
+            flex-direction: column;
+            padding-right: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1260px) and (min-width: 1209px)  {
+    :root {
+        --transformX-logo-offset: 25%;
+        .wrapper-carousel{
+            right: 7%;
+        }
+        .wrapper-buttons{
+            right: 6%;
+        }
+        .Modern_History-container{
+            flex-direction: column;
+        }
+        .img1-container{
+            padding-bottom: 30px;
+        }
+        .sachLevice_text3{
+            flex-direction: column;
+        }
+    }
+}
+
+@media only screen and (max-width: 1208px) and (min-width: 773px) {
+    :root {
+        --transformX-logo-offset: 70%;
+        --transformY-logo-offset: 170%;
+        --transformY-text-offset: 60%;
+        .wrapper-carousel{
+            left: 3%;
+            float: left;
+        }
+        .Modern_History{
+            margin-top: 600px;
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+        .Modern_History-container{
+            flex-direction: column;
+        }
+        .img1-container{
+            padding-bottom: 30px;
+        }
+        .sachLevice_text3{
+            flex-direction: column;
+        }
+    }
+}
+
+@media only screen and (max-width: 762px) {
+    :root {
+        --transformX-logo-offset: 70%;
+        --transformY-logo-offset: 150%;
+        --transformY-text-offset: 60%;
+        .wrapper-carousel{
+            left: 0;
+            float: left;
+        }
+
+        .Modern_History{
+            margin-top: 600px;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+        .custom-box{
+            display: none;
+        }
+        .Modern_History-container{
+            flex-direction: column;
+        }
+        .img1-container{
+            padding-bottom: 30px;
+        }
+        .sachLevice_text3{
+            flex-direction: column;
+        }
+    }
+}
+
+.Modern_History{
+    margin-top: 236px;
+    margin-right: 200px;
+    margin-left: 200px;
+    position: relative;
+}
+
+.Modern_History h1{
+    padding-bottom: 30px;
+}
+
+.Modern_History h2{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin-right: 10%;
+    font-family: DidotBoldItalic, sans-serif;
+}
+
+.text3 p{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    color: ghostwhite;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+    font-family: Arial;
+}
+
+.img1-container{
+    margin-top: 8%;
+    padding-left: 30px;
+    height: 346px;
+    width: 346px;
+}
+
+.img1-container img{
+    border: 5px solid gold;
+}
+
+.img2-container{
+    padding-bottom: 30px;
+    float: left;
+    flex: 0 0 auto;
+}
+
+.img2-container h6{
+    font-size: 13px;
+    padding-top: 5px;
+}
+
+.img2-container img{
+    height: 346px;
+    width: 517px;
+    border: 5px solid gold;
+}
+.img1-container img{
+    height: 346px;
+    width: 346px;
+    object-fit: cover;
+    flex-direction: column;
+}
+
+.sachLevice_text2{
+    color: ghostwhite;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+    font-family: Arial;
+}
+
+.wrapper-carousel{
+    width: 720px;
+    height: 415px;
+    position: absolute;
+    top: var(--wrapper-carousel-offset-top);
+    right: 3%;
+    z-index: 1;
+}
+
+
+.logo img{
+    height: 346px;
+    width: 346px;
+    transform: translateX(var(--transformX-logo-offset)) translateY(var(--transformY-logo-offset));
+    object-fit: cover;
+    flex-direction: column;
+}
+
+.custom-box {
+    background-color: #083e08;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 650px;
+    height: 350px;
+    z-index: 1;
+}
+
+.slide-frame{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 650px;
+    height: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 2;
+    flex-direction: row;
+    display: flex;
+    flex: 0 0 0;
+}
+
+img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes slideImages {
+    0% { transform: translateX(0%); }
+    5% { transform: translateX(-25%); }
+    10% { transform: translateX(-50%); }
+    15% { transform: translateX(-75%); }
+    20% { transform: translateX(-100%); }
+    25% { transform: translateX(-125%); }
+    30% { transform: translateX(-150%); }
+    35% { transform: translateX(-175%); }
+    40% { transform: translateX(-200%); }
+    45% { transform: translateX(-225%); }
+    50% { transform: translateX(-250%); }
+    55% { transform: translateX(-275%); }
+    60% { transform: translateX(-300%); }
+    65% { transform: translateX(-325%); }
+    70% { transform: translateX(-350%); }
+    75% { transform: translateX(-375%); }
+    80% { transform: translateX(-400%); }
+    85% { transform: translateX(-425%); }
+    90% { transform: translateX(-450%); }
+    95% { transform: translateX(-475%); }
+    97%{ transform: translateX(-495%); }
+    100% { transform: translateX(-500%); }
+}
+
+.img-container {
+    position: relative;
+    display: flex;
+    animation: slideImages 40s linear infinite;
+}
+
+.img-container  img {
+    flex: 0 0 calc(25% - 30px);
+    margin-right: 30px;
+    width: 100%;
+    height: 25%;
+    object-fit: cover;
+}
+
+.sachLevice_text {
+    color: ghostwhite;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+    font-family: Arial;
+}
+
+.headline-container {
+    color: ghostwhite;
+}
+.headline-container h1{
+    color: ghostwhite;
+    display: block;
+    font-family: "GFS Didot", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    height: 55px;
+    line-height: 55px;
+    margin-block-end: 10px;
+    margin-block-start: 20px;
+    margin-bottom: 60px;
+    margin-inline-end: 0;
+    margin-inline-start: 0;
+    margin-top: 20px;
+    text-align: left;
+    text-size-adjust: 100%;
+}
+
+.sachLevice_text p{
+    line-height: 26px;
+}
+
+.Headline-container{
+    text-align: left;
+}
+
+.sachLevice_text3{
+    color: ghostwhite;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+    font-family: Arial;
+    display: flex;
+}
+
+.Headline2-container{;
+    text-align: left;
+    margin-left: 10%;
+}
+
+.Headline2-container h2{
+    padding-bottom: 0;
+}
+
+.Headline3-container{;
+    text-align: left;
+    margin-left: 20%;
+}
+
+.Headline3-container h2{
+    padding-top: 0;
+}
+
+.sachLevice_text3 {
+    float: right;
+}
+
+.Headline3-container h3{
+    font-size: 27px;
+    padding-top: 30px;
+    padding-bottom: 0;
+}
+
+.Headline3-container h4{
+    font-size: 27px;
+    padding-bottom: 30px;
+    margin-left: 25%;
+}
+
+.Modern_History-container{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.sachLevice_text3_sub{
+    padding-left: 30px;
+}
+.logo {
+    object-fit: cover;
+}
+
 .gallery{
     height: 100vh;
     background-color: #232222;
