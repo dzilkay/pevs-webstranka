@@ -1,14 +1,120 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="Index.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
 </head>
 <body>
-<div class="Blog">
+<div class="blog-page">
+  <div class="blog-page-wrapper">
+    <div class = "wrapper-buttons">
+      <div id="mainButtons" class="MainButtons">
+        <div class="sb__MainButtons section__padding">
+          <div class="sb__MainButtons-links">
+            <div class="sb__MainButtons-links_div">
+              <a href="/Onas.html">
+                <p id="about">O nás</p>
+              </a>
+              <a href="/Clenovia">
+                <p id="members">Členovia</p>
+              </a>
+              <a href="/Blog">
+                <p id="blog">Novinky</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="SecondaryButtons" class="MainButtons">
+        <div class="sb__MainButtons section__padding">
+          <div class="sb__MainButtons-links">
+            <div class="sb__Secondary_Buttons-links_div">
+              <a href="/Galeria">
+                <p id="galery">Galéria</p>
+              </a>
+
+              <a href="/Registracia">
+                <p id="registration">Registrácia</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button id="dropbtn" class="dropbtn">Menu</button>
+      <div id="content" class="dropdown-content">
+        <a href="/Galeria">
+          <p>Galéria</p>
+        </a>
+
+        <a href="/Registracia">
+          <p>Registrácia</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="Header">
+      <h2><b>Novinky</b></h2>
+    </div>
+
+    <div class="Row">
+
+      <div class="leftcolumn">
+        <div class="card_custom">
+          <div class="Row">
+            <div class="text-left">
+              <h2>TITLE HEADING</h2>
+              <h5>Title description, Dec 7, 2017</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac sem dolor. In gravida ligula eu libero dictum iaculis. Aliquam erat volutpat.
+                Sed hendrerit dictum semper. Integer mollis condimentum velit eget porttitor. In at tempor purus, nec tincidunt erat. Nullam sed ornare libero.
+                Etiam posuere quam ullamcorper nunc malesuada, at dignissim lectus consequat. Vivamus pharetra justo quis erat blandit sollicitudin.
+                Aenean semper euismod magna tincidunt viverra. Nam eget neque vestibulum, scelerisque felis id,
+                convallis arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sit amet ornare massa.
+              </p>
+            </div>
+            <div class="placeHolderimg" style="height:300px;"></div>
+          </div>
+        </div>
+
+        <div class="card_custom">
+          <div class="Row">
+            <div class="text-left">
+              <h2>TITLE HEADING</h2>
+              <h5>Title description, Dec 7, 2017</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac sem dolor. In gravida ligula eu libero dictum iaculis. Aliquam erat volutpat.
+                Sed hendrerit dictum semper. Integer mollis condimentum velit eget porttitor. In at tempor purus, nec tincidunt erat. Nullam sed ornare libero.
+                Etiam posuere quam ullamcorper nunc malesuada, at dignissim lectus consequat. Vivamus pharetra justo quis erat blandit sollicitudin.
+                Aenean semper euismod magna tincidunt viverra. Nam eget neque vestibulum, scelerisque felis id,
+                convallis arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sit amet ornare massa.
+              </p>
+            </div>
+            <div class="placeHolderimg" style="height:300px;"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rightcolumn">
+        <div class="card2">
+          <h3>Nedávne príspevky</h3>
+          <div class="placeHolderimg2" >Image</div><br>
+          <div class="placeHolderimg2" >Image</div><br>
+          <div class="placeHolderimg2" >Image</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
   <footer class="footer">
-    <div class="container">
+    <div class="container_custom">
       <div class="rowf">
         <div class="footer-col">
           <h4>Ďalšie</h4>
@@ -48,5 +154,6 @@
     </div>
   </footer>
 </div>
+<script src="dropdownMenu.js"></script>
 </body>
 </html>
