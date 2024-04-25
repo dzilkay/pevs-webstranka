@@ -1030,3 +1030,26 @@ textarea {
 #form h1{
     color: forestgreen;
 }
+
+
+.Header {
+    left: 50%;
+    margin-left: -234px;
+
+    margin-top: 70px;
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    color: forestgreen;
+}
+
+.contents-wrapper {
+    margin-left: 23%;
+    margin-top: 15%;
+}
+
+.table-wrapper #ranking-type {
+    color: forestgreen;
+    margin-left: 45%;
+    margin-top: 50px;
+}
