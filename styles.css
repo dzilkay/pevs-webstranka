@@ -19,6 +19,21 @@
     overflow-x: auto;
 }
 
+.Rankings-page{
+    height: 100vh;
+    background-color: #232222;
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: 0;
+    margin: 0;
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+
 .sb__MainButtons-links {
     display: flex;
     flex-direction: column;
