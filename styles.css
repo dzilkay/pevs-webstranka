@@ -4,6 +4,22 @@
     box-sizing: border-box;
 }
 
+.Home{
+    height: 100vh;
+    text-align: #232222;
+    background-color: black;
+    background-image: url("Assets/Images/Fototapeta_Šachovnica_3371.jpg.large.jpg");
+    position: fixed;
+    min-width: 100%;
+    min-height: 120%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: 0;
+    margin: 0;
+    overflow-y: auto;
+}
+
 .blog-page{
     height: 100vh;
     background-color: #232222;
@@ -32,6 +48,11 @@
     margin: 0;
     overflow-y: scroll;
     overflow-x: auto;
+}
+
+.sb__button{
+    left: 2vw;
+    top: 40vh;
 }
 
 .sb__MainButtons-links {
@@ -120,7 +141,7 @@
 }
 
 .placeHolderimg {
-    background: url("/Assets/Images/img16.jpg") no-repeat;
+    background: url("Assets/Images/img16.jpg") no-repeat;
     width: 100%;
     height: 300px;
     padding: 20px;
@@ -130,7 +151,7 @@
 }
 
 .placeHolderimg2 {
-    background: url("img16.jpg") no-repeat;
+    background: url("Assets/Images/img16.jpg") no-repeat;
     width: 100%;
     height: 300px;
     padding: 20px;
@@ -155,6 +176,16 @@
 .dropbtn {
     right: 0;
     background-color: #232222;
+    color: forestgreen;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn2 {
+    right: 0;
+    background-color: black;
     color: forestgreen;
     padding: 16px;
     font-size: 16px;
@@ -251,6 +282,31 @@
     font-style: italic;
     margin-top: 25vh;
     color: ghostwhite;
+}
+
+#dropdown_home
+{
+    background-color: black;
+}
+
+#footer_home {
+    margin-top: 225px;
+}
+
+.Button_custom {
+    background-color: darkgoldenrod; /* Green background */
+    border: none; /* Remove border */
+    color: black; /* White text */
+    padding: 15px 32px; /* Padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Add pointer cursor */
+    border-radius: 5px; /* Add border radius */
+    position: absolute;
+    width: 130px;
+    left: 2vw;
+    margin-top: 20px;
 }
 
 /*2560x1440*/
