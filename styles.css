@@ -6,8 +6,8 @@
 
 .Home{
     height: 100vh;
-    text-align: #232222;
-    background-color: black;
+    text-align: center;
+    background-color: #232222;
     background-image: url("Assets/Images/Fototapeta_Šachovnica_3371.jpg.large.jpg");
     position: fixed;
     min-width: 100%;
