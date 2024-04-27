@@ -431,6 +431,7 @@
 
 @media only screen and (max-width: 974px) and (min-width: 762px) {
     .dropdown_custom{
+        right: 0;
         float: right;
         margin-top: 0;
     }
