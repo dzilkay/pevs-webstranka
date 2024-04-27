@@ -788,6 +788,11 @@ img {
     overflow-x: auto;
 }
 
+#reigstration_container {
+    margin-top: 300px !important;
+}
+
+
 .wrapper-gallery{
     margin: 0 20vw;
 }
