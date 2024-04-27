@@ -20,6 +20,21 @@
     overflow-y: auto;
 }
 
+.Information-page{
+    height: 100vh;
+    background-color: #232222;
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: 0;
+    margin: 0;
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+
 .blog-page{
     height: 100vh;
     background-color: #232222;
@@ -50,9 +65,29 @@
     overflow-x: auto;
 }
 
+#infoHeader{
+    margin-top: 10px;
+}
+.junior{
+    margin-top: 300px;
+    padding: 0;
+}
+
+.text_info{
+    font-family: sans-serif,Calibri;
+    font-size: 27px;
+    color: white;
+}
+
 .logo_home {
+    z-index: 0;
     margin-left: 15px;
     float: left;
+}
+
+#wrapper-logo{
+    margin-top: 170px;
+
 }
 
 .sb__button{
@@ -109,10 +144,9 @@
     position: absolute;
 }
 
-.dropdown{
+.dropdown_custom{
+    right: 0;
     z-index: 1;
-    margin-left: 90%;
-    position: absolute;
     background-color: transparent;
 }
 
@@ -125,8 +159,7 @@
 .Header {
     left: 50%;
     margin-left: -234px;
-
-    margin-top: 70px;
+    margin-top: 300px;
     padding: 30px;
     font-size: 40px;
     text-align: center;
@@ -275,16 +308,10 @@
     margin-left: 2vw;
     text-align: left;
     font-size: 40px;
-    font-style: italic;
+    font-family: Calibri,sans-serif;
     padding-top: 300px;
     position: relative;
     color: ghostwhite;
-}
-
-#dropdown_home
-{
-    right: 0;
-    background-color: transparent;
 }
 
 .Button_custom {
@@ -304,44 +331,30 @@
     margin-top: 20px;
 }
 
-/*2560x1440*/
 :root {
-    --transformY-logo-offset: 50%;
-    --transformY-text-offset: 100%;
-
-    --transformX-logo-offset: 180%;
-    --transformX-text-offset: 20%;
-
     --wrapper-carousel-offset-top: 12%;
 
     --right-text-offset: 35%;
 }
 
 /*height*/
-
-
-@media only screen and (max-height: 1080px) {
-    #drop
-    .dropdown{
-        display: none !important;
-    }
+@media only screen and (min-height: 1080px) {
     :root {
         --wrapper-carousel-offset-top: 12%;
 
-        --transformY-logo-offset: 35%;
-
         --transformY-text-offset: 30%;
+    }
+    .dropdown_custom {
+        display: none;
     }
 }
 
 /*width*/
 @media only screen and (max-width: 1920px) and (min-width: 1651px) {
-    .dropdown{
-        display: none !important;
+    .dropdown_custom{
+        display: none;
     }
     :root {
-        --transformX-logo-offset: 130%;
-
 
         --transformX-text-offset: 20%;
 
@@ -351,70 +364,56 @@
 }
 
 @media only screen and (max-width: 1650px) and (min-width: 1466px){
-    .dropdown{
+    .dropdown_custom{
         display: none;
     }
-    :root {
-        --transformX-logo-offset: 90%;
+    #wrapper-logo{
+        margin-top: 570px;
+        margin-left: 35%;
     }
 }
 
 @media only screen and (max-width: 1465px) and (min-width: 1361px) {
-    .dropdown{
+    .dropdown_custom{
         display: none;
     }
-    :root {
-        --transformX-logo-offset: 60%;
+    #wrapper-logo{
+        margin-top: 570px;
+        margin-left: 35%;
     }
 }
 
 @media only screen and (max-width: 1360px) and (min-width: 1261px){
-
-    :root {
-        --transformX-logo-offset: 30%;
-        .sachLevice_text3{
-            flex-direction: column;
-            padding-right: 20px;
-        }
+    .dropdown_custom{
+        display: none;
+    }
+    #wrapper-logo{
+        margin-top: 570px;
+        margin-left: 35%;
+    }
+    .sachLevice_text3{
+        flex-direction: column;
+        padding-right: 20px;
     }
 }
 
-@media only screen and (max-width: 1260px) and (min-width: 1209px)  {
-
-    :root {
-        --transformX-logo-offset: 25%;
-        .wrapper-carousel{
-            right: 7%;
-        }
-        .wrapper-buttons{
-            right: 6%;
-        }
-        .Modern_History-container{
-            flex-direction: column;
-        }
-        .img1-container{
-            padding-bottom: 30px;
-        }
-        .sachLevice_text3{
-            flex-direction: column;
-        }
+@media only screen and (max-width: 1260px) and (min-width: 974px) {
+    .dropdown_custom{
+        display: none;
     }
-}
-
-@media only screen and (max-width: 1208px) and (min-width: 974px) {
-    .dropdown{
-        margin-top: 0;
+    #wrapper-logo{
+        margin-top: 670px;
+        margin-left: 35%;
     }
     :root {
-        --transformX-logo-offset: 70%;
-        --transformY-logo-offset: 170%;
         --transformY-text-offset: 60%;
         .wrapper-carousel{
+            margin-top: 100px;
             left: 3%;
             float: left;
         }
         .Modern_History{
-            margin-top: 600px;
+            margin-top: 0;
             margin-right: 50px;
             margin-left: 50px;
         }
@@ -431,8 +430,17 @@
 }
 
 @media only screen and (max-width: 974px) and (min-width: 762px) {
-    .dropdown{
+    .dropdown_custom{
+        float: right;
         margin-top: 0;
+    }
+    .header{
+        margin-left: 0;
+        margin-top: 400px;
+    }
+    #wrapper-logo{
+        margin-top: 690px;
+        margin-left: 35%;
     }
     .sb__Secondary_Buttons-links_div {
         display: none;
@@ -441,15 +449,14 @@
         margin-top: 200px;
     }
     :root {
-        --transformX-logo-offset: 70%;
-        --transformY-logo-offset: 170%;
         --transformY-text-offset: 60%;
         .wrapper-carousel{
+            margin-top: 140px;
             left: 3%;
             float: left;
         }
         .Modern_History{
-            margin-top: 600px;
+            margin-top: 50px;
             margin-right: 50px;
             margin-left: 50px;
         }
@@ -466,8 +473,13 @@
 }
 
 @media only screen and (max-width: 762px) {
-    .dropdown{
+    .dropdown_custom{
+        float: right;
         margin-top: 0;
+    }
+    #wrapper-logo{
+        margin-top: 690px;
+        margin-left: 35%;
     }
     .sb__Secondary_Buttons-links_div {
         display: none;
@@ -482,16 +494,15 @@
         margin-top: 200px;
     }
     :root {
-        --transformX-logo-offset: 70%;
-        --transformY-logo-offset: 150%;
         --transformY-text-offset: 60%;
         .wrapper-carousel{
+            margin-top: 140px;
             left: 0;
             float: left;
         }
 
         .Modern_History{
-            margin-top: 600px;
+            margin-top: 50px;
             margin-right: 20px;
             margin-left: 20px;
         }
@@ -510,12 +521,8 @@
     }
 }
 
-/*@media only screen and (max-height: 1005px) {
-
-}*/
-
 .Modern_History{
-    margin-top: 236px;
+    margin-top: 206px;
     margin-right: 200px;
     margin-left: 200px;
     position: relative;
@@ -598,7 +605,6 @@
 .logo img{
     height: 346px;
     width: 346px;
-    transform: translateX(var(--transformX-logo-offset)) translateY(var(--transformY-logo-offset));
     object-fit: cover;
     flex-direction: column;
 }
@@ -1166,18 +1172,6 @@ textarea {
 }
 
 #form h1{
-    color: forestgreen;
-}
-
-
-.Header {
-    left: 50%;
-    margin-left: -234px;
-
-    margin-top: 70px;
-    padding: 30px;
-    font-size: 40px;
-    text-align: center;
     color: forestgreen;
 }
 

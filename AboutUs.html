@@ -3,25 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Form Validation</title>
+  <title>Šach Levice | O nás</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
 <div class="About">
+  <div class="logo_home">
+    <a href="Index.html">
+      <img src="Assets/Images/logo7.png" class="img-fluid" alt="..."/>
+    </a>
+  </div>
+
   <div class = "wrapper-buttons">
     <div id="mainButtons" class="MainButtons">
       <div class="sb__MainButtons section__padding">
         <div class="sb__MainButtons-links">
           <div class="sb__MainButtons-links_div">
-            <a href="/Onas.html">
+            <a href="AboutUs.html">
               <p id="about">O nás</p>
             </a>
-            <a href="/Clenovia">
+            <a href="Ranking.html">
               <p id="members">Členovia</p>
             </a>
-            <a href="/Blog">
+            <a href="Blog.html">
               <p id="blog">Novinky</p>
             </a>
           </div>
@@ -33,12 +39,15 @@
       <div class="sb__MainButtons section__padding">
         <div class="sb__MainButtons-links">
           <div class="sb__Secondary_Buttons-links_div">
-            <a href="/Galeria">
-              <p id="galery">Galéria</p>
+            <a href="Information.html">
+              <p id="information"><i class="fa-solid fa-circle-info" style="color: #ffd700;"></i>  Info</p>
+            </a>
+            <a href="Gallery.html">
+              <p id="galery"><i class="fa-solid fa-images" style="color: #ffd700;"></i>  Galéria</p>
             </a>
 
-            <a href="/Registracia">
-              <p id="registration">Registrácia</p>
+            <a href="Registration.html">
+              <p id="registration"><i class="fa-solid fa-arrow-right-to-bracket" style="color: #ffd700;"></i>  Registrácia</p>
             </a>
           </div>
         </div>
@@ -46,38 +55,42 @@
     </div>
   </div>
 
-  <div class="dropdown">
-    <button id="dropbtn" class="dropbtn">Menu</button>
+  <div class="dropdown_custom">
+    <button id="dropbtn" class="dropbtn"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></button>
     <div id="content" class="dropdown-content">
-      <a href="/Galeria">
+      <a href="Information.html">
+        <p>Info</p>
+      </a>
+      <a href="Gallery.html">
         <p>Galéria</p>
       </a>
 
-      <a href="/Registracia">
+      <a href="Registration.html">
         <p>Registrácia</p>
       </a>
     </div>
   </div>
+
   <div id="carousel-box" class="wrapper-carousel">
     <div class="custom-box"></div>
     <div class="slide-frame">
       <div class="slide-images">
         <div class="img-container">
-          <img src="Assets/Images/Carousel/img11.png">
-          <img src="Assets/Images/Carousel/img12.png">
-          <img src="Assets/Images/Carousel/img16.png">
-          <img src="Assets/Images/Carousel/img7.png">
-          <img src="Assets/Images/Carousel/img6.png">
-          <img src="Assets/Images/Carousel/img3.png">
+          <img src="Assets/Images/Carousel/img11.png"/>
+          <img src="Assets/Images/Carousel/img12.png"/>
+          <img src="Assets/Images/Carousel/img16.png"/>
+          <img src="Assets/Images/Carousel/img7.png"/>
+          <img src="Assets/Images/Carousel/img6.png"/>
+          <img src="Assets/Images/Carousel/img3.png"/>
         </div>
       </div>
     </div>
   </div>
 
 
-  <div id="wrapper-logo" class="container-fluid">
+  <div id="wrapper-logo">
     <div class="logo">
-      <img src="/Assets/logo2.png">
+      <img src="Assets/Images/logo2.png"/>
     </div>
   </div>
 
@@ -179,5 +192,6 @@
     </div>
   </footer>
 </div>
+<script src="https://kit.fontawesome.com/f1543734cd.js" crossorigin="anonymous"></script>
 </body>
 </html>

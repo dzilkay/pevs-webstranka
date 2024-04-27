@@ -3,25 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registration</title>
+  <title>Šach Levice | Registrácia</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
 <div class="registration">
+  <div class="logo_home">
+    <a href="Index.html">
+      <img src="Assets/Images/logo7.png" class="img-fluid" alt="..."/>
+    </a>
+  </div>
+
   <div class = "wrapper-buttons">
     <div id="mainButtons" class="MainButtons">
       <div class="sb__MainButtons section__padding">
         <div class="sb__MainButtons-links">
           <div class="sb__MainButtons-links_div">
-            <a href="/Onas.html">
+            <a href="AboutUs.html">
               <p id="about">O nás</p>
             </a>
-            <a href="/Clenovia">
+            <a href="Ranking.html">
               <p id="members">Členovia</p>
             </a>
-            <a href="/Blog">
+            <a href="Blog.html">
               <p id="blog">Novinky</p>
             </a>
           </div>
@@ -33,12 +39,15 @@
       <div class="sb__MainButtons section__padding">
         <div class="sb__MainButtons-links">
           <div class="sb__Secondary_Buttons-links_div">
-            <a href="/Galeria">
-              <p id="galery">Galéria</p>
+            <a href="Information.html">
+              <p id="information"><i class="fa-solid fa-circle-info" style="color: #ffd700;"></i>  Info</p>
+            </a>
+            <a href="Gallery.html">
+              <p id="galery"><i class="fa-solid fa-images" style="color: #ffd700;"></i>  Galéria</p>
             </a>
 
-            <a href="/Registracia">
-              <p id="registration">Registrácia</p>
+            <a href="Registration.html">
+              <p id="registration"><i class="fa-solid fa-arrow-right-to-bracket" style="color: #ffd700;"></i>  Registrácia</p>
             </a>
           </div>
         </div>
@@ -46,18 +55,22 @@
     </div>
   </div>
 
-  <div class="dropdown">
-    <button id="dropbtn" class="dropbtn">Menu</button>
+  <div class="dropdown_custom">
+    <button id="dropbtn" class="dropbtn"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></button>
     <div id="content" class="dropdown-content">
-      <a href="/Galeria">
+      <a href="Information.html">
+        <p>Info</p>
+      </a>
+      <a href="Gallery.html">
         <p>Galéria</p>
       </a>
 
-      <a href="/Registracia">
+      <a href="Registration.html">
         <p>Registrácia</p>
       </a>
     </div>
   </div>
+
   <div class="container">
     <form id="form" action="/">
       <h1 id="h-registration">Registrácia</h1>
@@ -173,6 +186,7 @@
     </div>
   </footer>
 </div>
+  <script src="https://kit.fontawesome.com/f1543734cd.js" crossorigin="anonymous"></script>
   <script src="Registration.js"></script>
 </body>
 </html>
