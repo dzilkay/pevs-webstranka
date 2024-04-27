@@ -37,7 +37,7 @@ function displayBlitz() {
             getBlitz(this);
         }
     };
-    xhttp.open("GET","membersList.xml",true);
+    xhttp.open("GET","Assets/Data/membersList.xml",true);
     xhttp.send();
 }
 
@@ -78,7 +78,7 @@ function getStandard(xml) {
     }
     table+="</table>";
     document.getElementById("text").innerHTML = "*Ratingy k 1.3.2024";
-    document.getElementById("ranking-type").innerHTML = "Blitz";
+    document.getElementById("ranking-type").innerHTML = "Štandard";
     document.getElementById("ranking").innerHTML = table;
 }
 function getRapid(xml) {
@@ -92,7 +92,7 @@ function getRapid(xml) {
     }
     table+="</table>";
     document.getElementById("text").innerHTML = "*Ratingy k 1.3.2024";
-    document.getElementById("ranking-type").innerHTML = "Blitz";
+    document.getElementById("ranking-type").innerHTML = "Rapid";
     document.getElementById("ranking").innerHTML = table;
 }
 
