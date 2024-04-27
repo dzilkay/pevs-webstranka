@@ -5,7 +5,7 @@ function displayMembers(){
             getAllMembers(this);
         }
     };
-    xhttp.open("GET","membersList.xml",true);
+    xhttp.open("GET","Assets/Data/membersList.xml",true);
     xhttp.send();
 }
 function displayStandard() {
@@ -15,7 +15,7 @@ function displayStandard() {
             getStandard(this);
         }
     };
-    xhttp.open("GET","membersList.xml",true);
+    xhttp.open("GET","Assets/Data/membersList.xml",true);
     xhttp.send();
 }
 
@@ -26,7 +26,7 @@ function displayRapid() {
             getRapid(this);
         }
     };
-    xhttp.open("GET","membersList.xml",true);
+    xhttp.open("GET","Assets/Data/membersList.xml",true);
     xhttp.send();
 }
 
