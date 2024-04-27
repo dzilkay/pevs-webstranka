@@ -12,63 +12,76 @@
 </head>
 <body>
 <div class="Home">
-    <div class = "wrapper-buttons">
-        <div id="mainButtons" class="MainButtons">
-            <div class="sb__MainButtons section__padding">
-                <div class="sb__MainButtons-links">
-                    <div class="sb__MainButtons-links_div">
-                        <a href="/Onas.html">
-                            <p id="about">O nás</p>
-                        </a>
-                        <a href="/Clenovia">
-                            <p id="members">Členovia</p>
-                        </a>
-                        <a href="/Blog">
-                            <p id="blog">Novinky</p>
-                        </a>
+        <div class="logo_home">
+            <a href="Index.html">
+                <img src="Assets/Images/logo7.png" class="img-fluid" alt="..."/>
+            </a>
+        </div>
+        <div class = "wrapper-buttons">
+            <div id="mainButtons" class="MainButtons">
+                <div class="sb__MainButtons section__padding">
+                    <div class="sb__MainButtons-links">
+                        <div class="sb__MainButtons-links_div">
+                            <a href="/Onas.html">
+                                <p id="about">O nás</p>
+                            </a>
+                            <a href="/Clenovia">
+                                <p id="members">Členovia</p>
+                            </a>
+                            <a href="/Blog">
+                                <p id="blog">Novinky</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="SecondaryButtons" class="MainButtons">
+                <div class="sb__MainButtons section__padding">
+                    <div class="sb__MainButtons-links">
+                        <div class="sb__Secondary_Buttons-links_div">
+                            <a href="/Informacie">
+                                <p id="information"><i class="fa-solid fa-circle-info" style="color: #ffd700;"></i>  Info</p>
+                            </a>
+                            <a href="/Galeria">
+                                <p id="galery"><i class="fa-solid fa-images" style="color: #ffd700;"></i>  Galéria</p>
+                            </a>
+
+                            <a href="/Registracia">
+                                <p id="registration"><i class="fa-solid fa-arrow-right-to-bracket" style="color: #ffd700;"></i>  Registrácia</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="SecondaryButtons" class="MainButtons">
-            <div class="sb__MainButtons section__padding">
-                <div class="sb__MainButtons-links">
-                    <div class="sb__Secondary_Buttons-links_div">
-                        <a href="/Galeria">
-                            <p id="galery">Galéria</p>
-                        </a>
+        <div class="dropdown" id="dropdown_home">
+            <button id="dropbtn" class="dropbtn2"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></button>
+            <div id="content" class="dropdown-content">
+                <a href="/Informacie">
+                    <p>Info</p>
+                </a>
+                <a href="/Galeria">
+                    <p>Galéria</p>
+                </a>
 
-                        <a href="/Registracia">
-                            <p id="registration">Registrácia</p>
-                        </a>
-                    </div>
-                </div>
+                <a href="/Registracia">
+                    <p>Registrácia</p>
+                </a>
             </div>
         </div>
-    </div>
 
-    <div class="dropdown" id="dropdown_home">
-        <button id="dropbtn" class="dropbtn2">Menu</button>
-        <div id="content" class="dropdown-content">
-            <a href="/Galeria">
-                <p>Galéria</p>
-            </a>
 
-            <a href="/Registracia">
-                <p>Registrácia</p>
-            </a>
-        </div>
-    </div>
 
     <div class="introductoryParagraph">
         <p >Vitajte v Levickom šachovom klube,</p>
         <p>v súčastnosti 1 z top 5 <br>slovenských šachových klubov</p>
         <p >majúcich mužstvo v 3 <br>slovenských najvyšších ligách</p>
-    </div>
+        <div class="sb__button">
+            <button class="Button_custom">O nás</button>
+        </div>
 
-    <div class="sb__button">
-        <button class="Button_custom">O nás</button>
     </div>
 
     <footer class="footer" id="footer_home">
@@ -114,6 +127,7 @@
 </div>
 <script src="ranking.js"></script>
 <script src="dropdownMenu.js"></script>
+<script src="https://kit.fontawesome.com/f1543734cd.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
