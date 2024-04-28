@@ -119,7 +119,7 @@
 }
 
 .sb__Secondary_Buttons-links_div {
-    margin-right: 45px;
+    margin-right: 80px;
     margin-top: 45px;
     display: flex;
     position: absolute;
@@ -129,7 +129,7 @@
 .sb__Secondary_Buttons-links_div a {
     text-decoration: none;
     color: gold;
-    margin-right: 40px;
+    margin-right: 10px;
     font-size: 25px;
 }
 
