@@ -6,8 +6,8 @@
 
 .Home{
     height: 100vh;
-    text-align: center;
     background-color: #232222;
+    text-align: center;
     background-image: url("Assets/Images/Fototapeta_Šachovnica_3371.jpg.large.jpg");
     position: fixed;
     min-width: 100%;
@@ -101,6 +101,7 @@
 }
 
 .sb__MainButtons-links_div {
+    display: flex;
     position: absolute;
     right: 0;
 }
@@ -118,8 +119,9 @@
 }
 
 .sb__Secondary_Buttons-links_div {
+    margin-right: 45px;
+    margin-top: 45px;
     display: flex;
-    padding: 45px;
     position: absolute;
     right: -15%;
 }
@@ -309,7 +311,7 @@
     text-align: left;
     font-size: 40px;
     font-family: Calibri,sans-serif;
-    padding-top: 300px;
+    margin-top: 300px;
     position: relative;
     color: ghostwhite;
 }
